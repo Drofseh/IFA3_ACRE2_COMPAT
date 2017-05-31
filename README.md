@@ -10,7 +10,7 @@ IFA, ACRE2, ACE3.
 Releases can be found [here](https://github.com/Drofseh/IFA3_ACRE2_COMPAT/releases), as soon as there are any.
 
 #### Feature Requests, Issues, Pull Requests
-Please check the [here](https://github.com/Drofseh/IFA3_ACRE2_COMPAT/blob/master/.github/CONTRIBUTING.md) for information on these topic.
+Please check the [here](https://github.com/Drofseh/IFA3_ACRE2_COMPAT/blob/master/.github/CONTRIBUTING.md) for information on these topics.
 
 #### Acknowlegements
 [IFA3 Lite](https://forums.bistudio.com/forums/topic/190809-iron-front-in-arm3-lite-preview-versions/)
