@@ -3,7 +3,7 @@ A mod for ARMA3 that adds compatibility between the ACRE2 mod and the IFA3 mod, 
 
 Very much a work in progress right now.
 
-#### Requirement
+#### Requirements
 IFA, ACRE2, ACE3.
 
 #### Releases
