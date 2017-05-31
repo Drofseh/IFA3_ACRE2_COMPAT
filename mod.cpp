@@ -1,0 +1,10 @@
+name = "IFA ACRE2 Compatibility";
+author = "Wilhelm Haas";
+description = "IFA ACRE2 Compatibility - Version 0.0.1";
+overview = "Provides compatibility between IFA3 vehicles and ACRE2 radios.";
+//logo = "Images\logo.paa";
+//logoOver = "Images\logo.paa";
+//logoSmall = "Images\logo.paa";
+//picture = "Images\picture.paa";
+//tooltip = "IFA ACRE2 Compatibility";
+//action = "https://github.com/Drofseh/IFA3_ACRE2_COMPAT";
