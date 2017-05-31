@@ -1,0 +1,12 @@
+release/*
+tools/temp
+*.cache
+*.pbo
+texHeaders.bin
+*.swp
+*.swo
+*.biprivatekey
+*.jpg
+*.png
+Thumbs.db
+CHANGELOG.md
