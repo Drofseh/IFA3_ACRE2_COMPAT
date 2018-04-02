@@ -6,7 +6,7 @@
 
 **ACE3 Version:** `1.x.x` (stable / dev)
 
-**ACRE2 Version:** `1.x.x` (stable / dev)
+**ACRE2 Version:** `2.x.x` (stable / dev)
 
 **Mods:**
 ```

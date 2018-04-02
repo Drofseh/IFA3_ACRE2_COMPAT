@@ -2,7 +2,7 @@
 ## Before reporting
 If you have found an issue please make sure that this mod really is the cause of the problem.
 
-To do this try to reproduce the issue with using only IFA, ACE3, ACRE2, CBA, and this mod, on a newly created mission.
+To do this try to reproduce the issue with using only CBA, IFA3, ACE3, IFA3/ACE Compat, ACRE2, and this mod, on a newly created mission.
 
 Indicate if the issue appears on stable or development version.
 
