@@ -1,7 +1,12 @@
 ## IFA3 ACRE2 Compatibility
 <p align="left">
     <a href="https://github.com/Drofseh/IFA3_ACRE2_COMPAT/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.1.0-blue.svg" alt="IFA3/ACRE2 Compat">
+        <img src="https://i.imgur.com/QE3JBd0.png" alt="IFA3/ACRE2 Compat">
+    </a>
+</p>
+<p align="left">
+    <a href="https://github.com/Drofseh/IFA3_ACRE2_COMPAT/releases/latest">
+        <img src="https://img.shields.io/badge/Version-0.2.0-blue.svg" alt="IFA3/ACRE2 Compat">
     </a>
 </p>
 A mod for ARMA3 that adds compatibility between the ACRE2 mod and the IFA3 mod for vehicle radios, intercoms, and infantry phones.
