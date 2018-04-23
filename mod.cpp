@@ -1,6 +1,6 @@
 name = "Iron Font in Arna 3 ACRE2 Compatibility";
 author = "Wilhelm Haas (Drofseh)";
-description = "IFA ACRE2 Compatibility - Version 0.2.0";
+description = "IFA ACRE2 Compatibility - Version 0.3.0";
 overview = "Provides compatibility between IFA3 vehicles and ACRE2 radios.";
 logo = "logo.paa";
 logoOver = "logo.paa";

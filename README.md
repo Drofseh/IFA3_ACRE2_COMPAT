@@ -6,7 +6,7 @@
 </p>
 <p align="left">
     <a href="https://github.com/Drofseh/IFA3_ACRE2_COMPAT/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.2.0-blue.svg" alt="IFA3/ACRE2 Compat">
+        <img src="https://img.shields.io/badge/Version-0.3.0-blue.svg" alt="IFA3/ACRE2 Compat">
     </a>
 </p>
 A mod for ARMA3 that adds compatibility between the ACRE2 mod and the IFA3 mod for vehicle radios, intercoms, and infantry phones.
@@ -28,8 +28,8 @@ This means that you won't be forced to have a player in the radio operators seat
 The correct radio operator seat must still be used to access the radio GUI and change radio frequencies.
 
 #### Requirements
-* IFA3 v26
-* ACRE2 v2.5.1.983 dev build
+* IFA3 v27
+* ACRE2 v2.5.1.984 dev build
 * ACE3 v3.12.1
 
 #### Releases

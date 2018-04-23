@@ -52,7 +52,7 @@ class LIB_PzKpfwIV_H_base : LIB_Tank_base {
             displayName = "Vehicle Radio";
             shortName = "Rack";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"crew"}; // This should be changes to  = {{"turret", {1}}}; once primaryGunner is fixed
+            allowedPositions[] = {{"turret", {1}}}; // This should be changes to  = {{"turret", {1}}}; once primaryGunner is fixed
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -132,7 +132,7 @@ class LIB_StuG_III_G_base : LIB_Tank_base {
             displayName = "Vehicle Radio";
             shortName = "Rack";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"}; // This should be changes to  = {{"turret", {0,1}}}; once primaryGunner is fixed
+            allowedPositions[] = {{"turret", {0,1}}}; // This should be changes to  = {{"turret", {0,1}}}; once primaryGunner is fixed
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -188,7 +188,7 @@ class LIB_SdKfz124_base : LIB_Tank_base {
             displayName = "Vehicle Radio";
             shortName = "Rack";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"}; // This should be changes to  = {"gunner", "commander"}; once primaryGunner is fixed
+            allowedPositions[] = {"gunner", "commander"}; // This should be changes to  = {"gunner", "commander"}; once primaryGunner is fixed
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -277,7 +277,7 @@ class LIB_SU85_base : LIB_Tank_base {
             displayName = "Vehicle Radio";
             shortName = "Rack";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"crew"}; // This should be changes to  = {{"turret", {0,1}}}; once primaryGunner is fixed
+            allowedPositions[] = {{"turret", {0,1}}}; // This should be changes to  = {{"turret", {0,1}}}; once primaryGunner is fixed
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
