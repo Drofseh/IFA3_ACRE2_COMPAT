@@ -79,10 +79,10 @@ class LIB_Ju52 : LIB_GER_Plane_base {
         class Intercom_1 {
             displayName = "Crew Intercom";
             shortName = "ICom";
-            allowedPositions[] = {"crew"};
+            allowedPositions[] = {"driver","gunner",{"turret", {11}}};
             disabledPositions[] = {};
             limitedPositions[] = {{"cargo", "all"}};
-            masterPositions[] = {"driver","copilot"};
+            masterPositions[] = {"driver","gunner"};
             numLimitedPositions = 2;
             connectedByDefault = 1;
         };
@@ -93,7 +93,7 @@ class LIB_Ju52 : LIB_GER_Plane_base {
             displayName = "Air Radio";
             shortName = "Air";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"driver","gunner"}; // This should be changes to  = {"driver","copilot"}; once the copilot is fixed
+            allowedPositions[] = {"driver","gunner"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -104,7 +104,7 @@ class LIB_Ju52 : LIB_GER_Plane_base {
             displayName = "Ground Radio";
             shortName = "Grnd";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"driver","gunner"}; // This should be changes to  = {"driver","copilot"}; once the copilot is fixed
+            allowedPositions[] = {"driver","gunner"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -200,10 +200,10 @@ class LIB_C47_Skytrain : LIB_US_Plane_base {
         class Intercom_1 {
             displayName = "Crew Intercom";
             shortName = "ICom";
-            allowedPositions[] = {"crew"};
+            allowedPositions[] = {"driver","gunner",{"turret", {17}}};
             disabledPositions[] = {};
             limitedPositions[] = {{"cargo", "all"}};
-            masterPositions[] = {"driver","copilot"};
+            masterPositions[] = {"driver","gunner"};
             numLimitedPositions = 2;
             connectedByDefault = 1;
         };
@@ -214,7 +214,7 @@ class LIB_C47_Skytrain : LIB_US_Plane_base {
             displayName = "Air Radio";
             shortName = "Air";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"driver","copilot"};
+            allowedPositions[] = {"driver","gunner"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -225,7 +225,7 @@ class LIB_C47_Skytrain : LIB_US_Plane_base {
             displayName = "Ground Radio";
             shortName = "Grnd";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"driver","copilot"};
+            allowedPositions[] = {"driver","gunner"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";

@@ -127,6 +127,19 @@ class LIB_StuG_III_G_base : LIB_Tank_base {
     acre_infantryPhonePosition[] = {0, -2.8, -0.4};
     acre_infantryPhoneCustomRinging[] = {"IFA3_ACRE2_Compat\Sound\InFoneGer.wss",7,1,1,40};
 
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "ICom";
+            allowedPositions[] = {"crew", {"turret", {0,1}}};
+            disabledPositions[] = {};
+            limitedPositions[] = {};
+            masterPositions[] = {"commander"};
+            numLimitedPositions = 0;
+            connectedByDefault = 1;
+        };
+    };
+
     class AcreRacks {
         class Rack_1 {
             displayName = "Vehicle Radio";
