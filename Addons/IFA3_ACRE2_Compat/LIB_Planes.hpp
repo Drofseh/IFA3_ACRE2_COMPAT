@@ -7,7 +7,7 @@ class LIB_Plane_base : Plane_Base_F {
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"crew"};
             disabledPositions[] = {};
             limitedPositions[] = {{"cargo", "all"}};
@@ -19,8 +19,8 @@ class LIB_Plane_base : Plane_Base_F {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver","copilot"};
             disabledPositions[] = {};
@@ -30,8 +30,8 @@ class LIB_Plane_base : Plane_Base_F {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver","copilot"};
             disabledPositions[] = {};
@@ -50,8 +50,8 @@ class LIB_US_Plane_base;
 class LIB_FW190F8 : LIB_GER_Plane_base {
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -61,8 +61,8 @@ class LIB_FW190F8 : LIB_GER_Plane_base {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -78,7 +78,7 @@ class LIB_Ju52 : LIB_GER_Plane_base {
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"driver","gunner",{"turret", {11}}};
             disabledPositions[] = {};
             limitedPositions[] = {{"cargo", "all"}};
@@ -90,8 +90,8 @@ class LIB_Ju52 : LIB_GER_Plane_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver","gunner"};
             disabledPositions[] = {};
@@ -101,8 +101,8 @@ class LIB_Ju52 : LIB_GER_Plane_base {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver","gunner"};
             disabledPositions[] = {};
@@ -117,8 +117,8 @@ class LIB_Ju52 : LIB_GER_Plane_base {
 class LIB_Ju87 : LIB_GER_Plane_base {
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -128,8 +128,8 @@ class LIB_Ju87 : LIB_GER_Plane_base {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -144,8 +144,8 @@ class LIB_Ju87 : LIB_GER_Plane_base {
 class LIB_P39 : LIB_SU_Plane_base {
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Anna";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -155,8 +155,8 @@ class LIB_P39 : LIB_SU_Plane_base {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Borís";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -171,8 +171,8 @@ class LIB_P39 : LIB_SU_Plane_base {
 class LIB_Pe2 : LIB_SU_Plane_base {
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Anna";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -182,8 +182,8 @@ class LIB_Pe2 : LIB_SU_Plane_base {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Borís";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -199,7 +199,7 @@ class LIB_C47_Skytrain : LIB_US_Plane_base {
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"driver","gunner",{"turret", {17}}};
             disabledPositions[] = {};
             limitedPositions[] = {{"cargo", "all"}};
@@ -211,8 +211,8 @@ class LIB_C47_Skytrain : LIB_US_Plane_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver","gunner"};
             disabledPositions[] = {};
@@ -222,8 +222,8 @@ class LIB_C47_Skytrain : LIB_US_Plane_base {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver","gunner"};
             disabledPositions[] = {};
@@ -238,8 +238,8 @@ class LIB_C47_Skytrain : LIB_US_Plane_base {
 class LIB_CG4_WACO : LIB_US_Plane_base {
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver", "gunner"}; // This should be changes to  = {"driver","copilot"}; once the copilot is fixed
             disabledPositions[] = {};
@@ -249,8 +249,8 @@ class LIB_CG4_WACO : LIB_US_Plane_base {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver", "gunner"}; // This should be changes to  = {"driver","copilot"}; once the copilot is fixed
             disabledPositions[] = {};
@@ -266,7 +266,7 @@ class LIB_HORSA : LIB_US_Plane_base {
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"driver", "gunner"}; // This should be changes to  = {"driver","copilot"}; once the copilot is fixed
             disabledPositions[] = {};
             limitedPositions[] = {};
@@ -277,8 +277,8 @@ class LIB_HORSA : LIB_US_Plane_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver", "gunner"}; // This should be changes to  = {"driver","copilot"}; once the copilot is fixed
             disabledPositions[] = {};
@@ -288,8 +288,8 @@ class LIB_HORSA : LIB_US_Plane_base {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver", "gunner"}; // This should be changes to  = {"driver","copilot"}; once the copilot is fixed
             disabledPositions[] = {};
@@ -304,8 +304,8 @@ class LIB_HORSA : LIB_US_Plane_base {
 class LIB_P47 : LIB_US_Plane_base {
     class AcreRacks {
         class Rack_1 {
-            displayName = "Air Radio";
-            shortName = "Air";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -315,8 +315,8 @@ class LIB_P47 : LIB_US_Plane_base {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Ground Radio";
-            shortName = "Grnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};

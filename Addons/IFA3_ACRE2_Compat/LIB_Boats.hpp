@@ -3,7 +3,7 @@ class LIB_Boat_base : Boat_F {
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"crew"};
             disabledPositions[] = {};
             limitedPositions[] = {{"cargo", "all"}};
@@ -15,8 +15,8 @@ class LIB_Boat_base : Boat_F {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};

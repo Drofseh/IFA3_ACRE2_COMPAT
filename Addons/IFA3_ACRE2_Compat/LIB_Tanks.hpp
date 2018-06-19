@@ -12,7 +12,7 @@ class LIB_Tank_base : Tank_F {
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"crew"};
             disabledPositions[] = {};
             limitedPositions[] = {};
@@ -24,8 +24,8 @@ class LIB_Tank_base : Tank_F {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"crew"};
             disabledPositions[] = {};
@@ -49,10 +49,10 @@ class LIB_PzKpfwIV_H_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}}; // This should be changes to  = {{"turret", {1}}}; once primaryGunner is fixed
+            allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -69,8 +69,8 @@ class LIB_PzKpfwV_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -89,8 +89,8 @@ class LIB_PzKpfwVI_B_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -109,8 +109,8 @@ class LIB_PzKpfwVI_E_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -130,7 +130,7 @@ class LIB_StuG_III_G_base : LIB_Tank_base {
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"crew", {"turret", {0,1}}};
             disabledPositions[] = {};
             limitedPositions[] = {};
@@ -142,10 +142,10 @@ class LIB_StuG_III_G_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {0,1}}}; // This should be changes to  = {{"turret", {0,1}}}; once primaryGunner is fixed
+            allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -160,8 +160,8 @@ class LIB_FlakPanzerIV_Wirbelwind : LIB_PzKpfwIV_H_base {
     class AcreRacks {
         /*
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {};
             disabledPositions[] = {};
@@ -186,7 +186,7 @@ class LIB_SdKfz124_base : LIB_Tank_base {
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"driver", "commander"};
             disabledPositions[] = {};
             limitedPositions[] = {};
@@ -198,10 +198,10 @@ class LIB_SdKfz124_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"gunner", "commander"}; // This should be changes to  = {"gunner", "commander"}; once primaryGunner is fixed
+            allowedPositions[] = {"gunner", "commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -221,8 +221,8 @@ class LIB_M4A3_75_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -268,8 +268,8 @@ class LIB_JS2_43_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -287,10 +287,10 @@ class LIB_SU85_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {0,1}}}; // This should be changes to  = {{"turret", {0,1}}}; once primaryGunner is fixed
+            allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -306,8 +306,8 @@ class LIB_T34_76_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -325,8 +325,8 @@ class LIB_T34_85_base : LIB_Tank_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};

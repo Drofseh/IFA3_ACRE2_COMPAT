@@ -28,9 +28,9 @@ This means that you won't be forced to have a player in the radio operators seat
 The correct radio operator seat must still be used to access the radio GUI and change radio frequencies.
 
 #### Requirements
-* IFA3 v27
-* ACRE2 v2.5.1.984 dev build
-* ACE3 v3.12.1
+* IFA3 v30
+* ACRE2 v2.6.0.990
+* ACE3 v3.12.2
 
 #### Releases
 Releases can be found [here](https://github.com/Drofseh/IFA3_ACRE2_COMPAT/releases).

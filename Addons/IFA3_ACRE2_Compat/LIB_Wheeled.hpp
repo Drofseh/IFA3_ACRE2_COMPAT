@@ -13,7 +13,7 @@ class LIB_SdKfz222_base: LIB_Truck_base {
         /*
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"crew"};
             disabledPositions[] = {};
             limitedPositions[] = {};
@@ -26,8 +26,8 @@ class LIB_SdKfz222_base: LIB_Truck_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"}; // This should be changes to  = {"gunner"}; but for some reason the gunner slot won't accept any radio at all, even with "crew".
             disabledPositions[] = {};
@@ -50,7 +50,7 @@ class LIB_SdKfz234_base: LIB_Truck_base {
         /*
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"crew"};
             disabledPositions[] = {};
             limitedPositions[] = {};
@@ -63,8 +63,8 @@ class LIB_SdKfz234_base: LIB_Truck_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -86,7 +86,7 @@ class LIB_M8_Greyhound_base : LIB_Truck_base {
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {"crew"};
             disabledPositions[] = {};
             limitedPositions[] = {};
@@ -98,8 +98,8 @@ class LIB_M8_Greyhound_base : LIB_Truck_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -118,8 +118,8 @@ class LIB_Scout_M3_base: LIB_Truck_base {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver", {"cargo", 0}};
             disabledPositions[] = {};
@@ -135,8 +135,8 @@ class LIB_Scout_M3_FFV: LIB_Scout_M3_base {
     // The FFV version is the same, but the front passenger sear is a different cargo index
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver", {"cargo", 6}};
             disabledPositions[] = {};

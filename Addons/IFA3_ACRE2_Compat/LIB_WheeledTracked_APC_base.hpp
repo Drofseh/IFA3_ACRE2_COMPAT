@@ -9,7 +9,7 @@ class LIB_WheeledTracked_APC_base : Tank_F {
         /*
         class Intercom_1 {
             displayName = "Crew Intercom";
-            shortName = "ICom";
+            shortName = "IntCm";
             allowedPositions[] = {};
             disabledPositions[] = {};
             limitedPositions[] = {};
@@ -22,8 +22,8 @@ class LIB_WheeledTracked_APC_base : Tank_F {
     class AcreRacks {
         /*
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {};
             disabledPositions[] = {};
@@ -39,8 +39,8 @@ class LIB_WheeledTracked_APC_base : Tank_F {
 class LIB_SdKfz251_base : LIB_WheeledTracked_APC_base {
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver", {"cargo", 4}};
             disabledPositions[] = {};
@@ -55,8 +55,8 @@ class LIB_SdKfz251_base : LIB_WheeledTracked_APC_base {
 class LIB_SdKfz251_FFV_base : LIB_SdKfz251_base {
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver", {"cargo", 3}};
             disabledPositions[] = {};
@@ -72,8 +72,8 @@ class LIB_SdKfz_7_base : LIB_WheeledTracked_APC_base {
     class AcreRacks {
         /*
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {};
             disabledPositions[] = {};
@@ -89,8 +89,8 @@ class LIB_SdKfz_7_base : LIB_WheeledTracked_APC_base {
 class LIB_Halftrack_base : LIB_WheeledTracked_APC_base {
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set";
+            shortName = "Radio";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
