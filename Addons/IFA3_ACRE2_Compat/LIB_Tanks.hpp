@@ -213,7 +213,7 @@ class LIB_SdKfz124_base : LIB_Tank_base {
 
 class LIB_M4A3_75_base : LIB_Tank_base {
     // M4 Sherman inherits a full crew intercom and an infantry phone
-    // Radio Rx and Tx are available to all crew over the intercom, but only the hull Machine Gunner can open the radio GUI to change frequency
+    // Radio Rx and Tx are available to all crew over the intercom, but only the Commander can open the radio GUI to change frequency
     // Infantry phone positions is customized, but currently commented out and {0, 0, 0} is used as default
     // The vehicle centre, and consequently the ACE interaction point that acre_infantryPhonePosition is based off, of is messed up, when that gets fixed in IFA3 this should get updated
     // acre_infantryPhonePosition[] = {0, -2.52, 0}; // Model centre is at ground level, set Z axis and apply once model centre fixed.
@@ -224,7 +224,7 @@ class LIB_M4A3_75_base : LIB_Tank_base {
             displayName = "Radio Set";
             shortName = "Radio";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";

@@ -1,4 +1,4 @@
-class LIB_WheeledTracked_APC_base : Tank_F {
+class LIB_WheeledTracked_APC_base : LIB_Truck_base {
     acre_hasInfantryPhone = 0;
     acre_infantryPhoneDisableRinging = 1;
     acre_infantryPhonePosition[] = {0, 0, 0};

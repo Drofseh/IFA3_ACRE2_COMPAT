@@ -1,6 +1,6 @@
 name = "Iron Font in Arma 3 ACRE2 Compatibility";
 author = "Wilhelm Haas (Drofseh)";
-description = "IFA ACRE2 Compatibility - Version 1.0.0";
+description = "IFA ACRE2 Compatibility - Version 1.0.1";
 overview = "Provides compatibility between IFA3 vehicles and ACRE2 radios.";
 logo = "logo.paa";
 logoOver = "logo.paa";
