@@ -4,7 +4,10 @@ class LIB_Car_base;
 class Truck_F;
 class LIB_Truck_base;
 
-class LIB_SdKfz222_base: LIB_Truck_base {
+class Wheeled_Apc_F;
+class LIB_ArmouredCar_base: Wheeled_Apc_F {};
+
+class LIB_SdKfz222_base: LIB_ArmouredCar_base {
     // The 222 has no infantry phone, no intercom, and a radio with the GUI accessible to the gunner (temporarily set to commander instead)
     acre_hasInfantryPhone = 0;
     acre_infantryPhoneDisableRinging = 1;
@@ -39,7 +42,7 @@ class LIB_SdKfz222_base: LIB_Truck_base {
     };
 };
 
-class LIB_SdKfz234_base: LIB_Truck_base {
+class LIB_SdKfz234_base: LIB_ArmouredCar_base {
     // The 234 has no crew intercom, no infantry phone, and a radio accessible by the driver
     // Strictly speaking the radio should be accessed by the rear driver/radio operator
     // Once/if that seat is implemented this config should be changed
@@ -197,7 +200,7 @@ class LIB_SdKfz234_4_Com : LIB_SdKfz234_4 {
     };
 };
 
-class LIB_M8_Greyhound_base : LIB_Truck_base {
+class LIB_M8_Greyhound_base : LIB_ArmouredCar_base {
     // The M8 Greyhound has a crew intercom, no infantry phone, and a radio accessible by the driver
     // Strictly speaking the radio should be accessed by a dedicated radio operator next to the driver
     // Once/if that seat is implemented this config should be changed
