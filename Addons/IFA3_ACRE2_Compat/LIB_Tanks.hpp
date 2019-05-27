@@ -453,6 +453,49 @@ class LIB_M4A2_SOV_Com : LIB_M4A2_SOV {
     };
 };
 
+class LIB_Churchill_base : LIB_Tank_base {
+    acre_infantryPhonePosition[] = {-0.498,-3.935,-1.038};
+    acre_infantryPhoneCustomRinging[] = {"IFA3_ACRE2_Compat\Sound\InFoneUK.wss",4,1,1,40};
+
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "IntCm";
+            allowedPositions[] = {"crew"};
+            disabledPositions[] = {};
+            limitedPositions[] = {};
+            masterPositions[] = {"commander"};
+            numLimitedPositions = 0;
+            connectedByDefault = 1;
+        };
+    };
+
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
+            componentname = "ACRE_VRC64";
+            allowedPositions[] = {{"turret", {0,1}}};
+            disabledPositions[] = {{"turnedout", "all"}};
+            defaultComponents[] = {};
+            mountedRadio = "ACRE_PRC77";
+            isRadioRemovable = 0;
+            intercom[] = {"intercom_1"};
+        };
+        class Rack_2 {
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
+            componentname = "ACRE_VRC64";
+            allowedPositions[] = {{"turret", {0,1}}};
+            disabledPositions[] = {{"turnedout", "all"}};
+            defaultComponents[] = {};
+            mountedRadio = "ACRE_PRC77";
+            isRadioRemovable = 0;
+            intercom[] = {"intercom_1"};
+        };
+    };
+};
+
 class LIB_Crusader_Base : LIB_Tank_base {
     class Turrets;
 };
@@ -485,8 +528,8 @@ class LIB_Crusader_Command : LIB_Crusader_Mk3 {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Radio Set";
-            shortName = "Radio";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {{"turnedout", "all"}};
@@ -559,7 +602,7 @@ class LIB_Cromwell_Base : LIB_Tank_base {
 class LIB_Cromwell_Mk4 : LIB_Cromwell_Base {
     class Turrets : Turrets {
         class MainTurret;
-		class kurs_MG_turret;
+        class kurs_MG_turret;
     };
 };
 
@@ -568,8 +611,8 @@ class LIB_Cromwell_Command : LIB_Cromwell_Mk4 {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Radio Set";
-            shortName = "Radio";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {{"turnedout", "all"}};
@@ -596,7 +639,7 @@ class LIB_Cromwell_Command : LIB_Cromwell_Mk4 {
             magazines[] = {"LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa"};
             weapons[] = {"LIB_Besa_coax"};
         };
-		class kurs_MG_turret: kurs_MG_turret {};
+        class kurs_MG_turret: kurs_MG_turret {};
     };
 };
 
@@ -645,6 +688,7 @@ class LIB_M4A4_FIREFLY_Com : LIB_M4A4_FIREFLY {
 class LIB_M4A3_76 : LIB_M4A3_75 {
     // Config as the M4 Sherman, except infantry phone position
     acre_infantryPhonePosition[] = {0.2, -3.1, 0};
+    class Turrets;
 };
 
 class LIB_M4A3_76_Com : LIB_M4A3_76 {
@@ -716,7 +760,7 @@ class LIB_M3A3_Stuart : LIB_M4A3_75 {
 
     class Turrets : Turrets {
         class MainTurret;
-		class kurs_MG_turret;
+        class kurs_MG_turret;
     };
 };
 
@@ -753,7 +797,7 @@ class LIB_M3A3_Stuart_Com : LIB_M3A3_Stuart {
             magazines[] = {"LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4"};
             weapons[] = {"LIB_M1919A4_coax"};
         };
-		class kurs_MG_turret: kurs_MG_turret {};
+        class kurs_MG_turret: kurs_MG_turret {};
     };
 };
 
@@ -763,7 +807,7 @@ class LIB_M5A1_Stuart : LIB_M3A3_Stuart {
 
     class Turrets : Turrets {
         class MainTurret;
-		class kurs_MG_turret;
+        class kurs_MG_turret;
     };
 };
 
@@ -800,7 +844,7 @@ class LIB_M5A1_Stuart_Com : LIB_M5A1_Stuart {
             magazines[] = {"LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4","LIB_250Rnd_M1919A4"};
             weapons[] = {"LIB_M1919A4_coax"};
         };
-		class kurs_MG_turret: kurs_MG_turret {};
+        class kurs_MG_turret: kurs_MG_turret {};
     };
 };
 
