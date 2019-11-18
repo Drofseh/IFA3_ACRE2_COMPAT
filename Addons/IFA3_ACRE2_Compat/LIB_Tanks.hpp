@@ -35,6 +35,8 @@ class LIB_Tank_base : Tank_F {
             intercom[] = {"intercom_1"};
         };
     };
+
+    class Turrets;
 };
 
 class LIB_PzKpfwIV_H_base : LIB_Tank_base {
@@ -596,18 +598,25 @@ class LIB_Cromwell_Base : LIB_Tank_base {
         };
     };
 
-    class Turrets;
-};
-
-class LIB_Cromwell_Mk4 : LIB_Cromwell_Base {
     class Turrets : Turrets {
         class MainTurret;
         class kurs_MG_turret;
     };
 };
 
-class LIB_Cromwell_Command : LIB_Cromwell_Mk4 {
+/*class LIB_Cromwell_Mk4 : LIB_Cromwell_Base {
+    class Turrets : Turrets {
+        class MainTurret;
+        class kurs_MG_turret;
+    };
+};*/
+
+class LIB_Cromwell_Command : LIB_Cromwell_Base {
     displayName = "Cromwell (Command)";
+    crew = "LIB_UK_Tank_Crew";
+    editorPreview = "\WW2\Core_t\IF_EditorPreviews_t\LIB_Cromwell_Mk4.jpg";
+    faction = "LIB_UK_ARMY";
+    scope = 2;
 
     class AcreRacks {
         class Rack_1 {
@@ -638,6 +647,33 @@ class LIB_Cromwell_Command : LIB_Cromwell_Mk4 {
         class MainTurret : MainTurret {
             magazines[] = {"LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa","LIB_225Rnd_Besa"};
             weapons[] = {"LIB_Besa_coax"};
+            gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\IF_M4A3_75_Driver_Optic.p3d";
+            class OpticsIn {
+                class Wide {
+                    initAngleX = 0;
+                    minAngleX = -100;
+                    maxAngleX = 100;
+                    initAngleY = 0;
+                    minAngleY = -360;
+                    maxAngleY = 360;
+                    initFov = 0.194;
+                    minFov = 0.194;
+                    maxFov = 0.194;
+                    visionMode[] = {"Normal"};
+                    thermalMode[] = {0,1};
+                    gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\CSA_Cromwell_MG_Reticle.p3d";
+                    opticsPPEffects[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
+                    OpticsFlare = 1;
+                };
+                class Narrow: Wide {
+                    gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\IF_M4A3_75_Driver_Optic.p3d";
+                    initFov = 0.4;
+                    minFov = 0.4;
+                    maxFov = 0.4;
+                    opticsPPEffects[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
+                    opticsDisablePeripherialVision = 1;
+                };
+            };
         };
         class kurs_MG_turret: kurs_MG_turret {};
     };
