@@ -146,10 +146,30 @@ class LIB_PzBefWgV : LIB_PzKpfwV {
     };
 };
 
+class LIB_PzKpfwVI_B_base : LIB_Tank_base {
+    // Config as the Panzer IV, except infantry phone position
+    acre_infantryPhonePosition[] = {1.025, -3.9, -0.8};
+    acre_infantryPhoneCustomRinging[] = {"IFA3_ACRE2_Compat\Sound\InFoneGer.wss",7,1,1,40};
+
+    class AcreRacks {
+        class Rack_1 {
+            displayName = "Radio Set";
+            shortName = "Radio";
+            componentname = "ACRE_VRC64";
+            allowedPositions[] = {{"turret", {1}}};
+            disabledPositions[] = {{"turnedout", "all"}};
+            defaultComponents[] = {};
+            mountedRadio = "ACRE_PRC77";
+            isRadioRemovable = 0;
+            intercom[] = {"intercom_1"};
+        };
+    };
+};
+
 class LIB_PzKpfwVI_B;
 
-class LIB_PzBefWgVI_E : LIB_PzKpfwVI_B {
-    displayName = "PzBefWg VI Tiger";
+class LIB_PzBefWgVI_B : LIB_PzKpfwVI_B {
+    displayName = "PzBefWg VI Kingtiger";
 
     class AcreRacks {
         class Rack_1 {
@@ -177,26 +197,6 @@ class LIB_PzBefWgVI_E : LIB_PzKpfwVI_B {
     };
 };
 
-class LIB_PzKpfwVI_B_base : LIB_Tank_base {
-    // Config as the Panzer IV, except infantry phone position
-    acre_infantryPhonePosition[] = {1.025, -3.9, -0.8};
-    acre_infantryPhoneCustomRinging[] = {"IFA3_ACRE2_Compat\Sound\InFoneGer.wss",7,1,1,40};
-
-    class AcreRacks {
-        class Rack_1 {
-            displayName = "Radio Set";
-            shortName = "Radio";
-            componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}};
-            disabledPositions[] = {{"turnedout", "all"}};
-            defaultComponents[] = {};
-            mountedRadio = "ACRE_PRC77";
-            isRadioRemovable = 0;
-            intercom[] = {"intercom_1"};
-        };
-    };
-};
-
 class LIB_PzKpfwVI_E_base : LIB_Tank_base {
     // Config as the Panzer IV, except infantry phone position
     acre_infantryPhonePosition[] = {0, -3.75, -1.1};
@@ -219,8 +219,8 @@ class LIB_PzKpfwVI_E_base : LIB_Tank_base {
 
 class LIB_PzKpfwVI_E;
 
-class LIB_PzBefWgVI_B : LIB_PzKpfwVI_E {
-    displayName = "PzBefWg VI Ausf. B Kingtiger";
+class LIB_PzBefWgVI_E : LIB_PzKpfwVI_E {
+    displayName = "PzBefWg VI Tiger";
 
     class AcreRacks {
         class Rack_1 {
